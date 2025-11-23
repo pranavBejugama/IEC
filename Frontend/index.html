@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mastermind / Codebreaker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game">
+    <header class="top-bar">
+      <h1>MASTERMINDS</h1>
+      <button id="newGame">New Game</button>
+    </header>
+
+    <section id="board" class="board">
+      <!-- 10 rows, each: 4 guess slots + 4 feedback pegs -->
+      <!-- We’ll generate these in JS or you can hard-code. JS version is cleaner. -->
+    </section>
+
+    <section class="palette-section">
+      <h2>Pick a color</h2>
+      <div id="palette" class="palette">
+        <!-- Color buttons (we'll style them as circles) -->
+        <div id="palette" class="palette">
+  <button class="color" data-color="0">0</button>
+  <button class="color" data-color="1">1</button>
+  <button class="color" data-color="2">2</button>
+  <button class="color" data-color="3">3</button>
+  <button class="color" data-color="4">4</button>
+  <button class="color" data-color="5">5</button>
+  <button class="color" data-color="6">6</button>
+  <button class="color" data-color="7">7</button>
+  <button class="color" data-color="8">8</button>
+  <button class="color" data-color="9">9</button>
+</div>
+
+      </div>
+      <button id="submitGuess" class="check-btn">Check Guess</button>
+    </section>
+
+    <p id="status" class="status">Click a color, then click on a slot in the active row.</p>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
